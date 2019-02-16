@@ -1,0 +1,19 @@
+import java.io.*;
+public class Palin{
+public static void main (String args []) {
+Scanner sc=new Scanner(System.in);
+int a, a1, r=0,s=0;
+System.out.println("Enter a number");
+a=sc.nextInt();
+a1=a;
+while(a!=0){
+r=a%10;
+s=s*10+r;
+a=a/10;
+}
+if(s==a1)
+System.out.println(a+" is a palindrome number");
+else
+System.out.println (a+" is not a palindrome number");
+} 
+} 
